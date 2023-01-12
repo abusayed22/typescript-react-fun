@@ -4,6 +4,8 @@ import { Person } from './components/Person';
 import PersonsList from './components/PersonsList';
 import AddvanceProps from './components/AddvanceProps';
 import Heading from './components/reactnode/Heading';
+import Button from './components/events/Button';
+import Input from './components/events/Input';
 
 const personName= {
   first: 'Mosh',
@@ -34,6 +36,8 @@ function App() {
       <PersonsList names={personsName} />
       <AddvanceProps />
       <Heading />
+      <Button clickHandler={(event,id) => console.log('hello clicked',event,id)} />
+      <Input value='hello world' changeHandler={(e) => console.log(e)} />
     </div>
   );
 }
