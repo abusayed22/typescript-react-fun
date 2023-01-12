@@ -1,8 +1,7 @@
 import React from 'react'
+import { containerProps } from './style.type'
 
-type containerProps = {
-    styles: React.CSSProperties
-}
+
 
 export default function Container(props: containerProps) {
   return (
