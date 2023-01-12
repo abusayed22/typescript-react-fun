@@ -7,6 +7,7 @@ import Heading from './components/reactnode/Heading';
 import Button from './components/events/Button';
 import Input from './components/events/Input';
 import Container from './components/style/Container';
+import User from './components/state/User';
 
 const personName= {
   first: 'Mosh',
@@ -40,6 +41,7 @@ function App() {
       <Button clickHandler={(event,id) => console.log('hello clicked',event,id)} />
       <Input value='hello world' changeHandler={(e) => console.log(e)} />
       <Container styles={{border:'1px solid red', padding:'1px'}} />
+      <User name='sabbir' email='sabbirA@exple.com' />
     </div>
   );
 }
